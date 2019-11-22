@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="BaseLayout" template="/pages/BaseLayout.jsp">
+		<put-attribute name="header" value="/pages/Header.jsp" />
+		<put-attribute name="footer" value="/pages/Footer.jsp" />
+	</definition>
+	
+	
+	<definition name="Welcome" extends="BaseLayout" >
+		<put-attribute name="body"  value="/pages/Welcome.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="UserRegistration" extends="BaseLayout" >
+		<put-attribute name="body"  value="/pages/UserRegistration.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="Login" extends="BaseLayout" >
+		<put-attribute name="body"  value="/pages/Login.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="ForgetPassword" extends="BaseLayout" >
+		<put-attribute name="body"  value="/pages/ForgetPassword.jsp"></put-attribute>
+	</definition>
+	
+	
+	
+	
+	
+
+	<definition name="UserBaseLayout" template="/pages/UserBaseLayout.jsp">
+		<put-attribute name="header" value="/pages/UserHeader.jsp" />
+		<put-attribute name="footer" value="/pages/Footer.jsp" />
+		<put-attribute name="menu" value="/pages/Menu.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="UserWelcome" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/UserWelcome.jsp"></put-attribute>
+	</definition>
+	
+	
+
+	
+	
+	<definition name="User" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/User.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="UserList" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/UserList.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="Myprofile" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/Myprofile.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="ChangePassword" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/ChangePassword.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="Salary" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/Salary.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="SalaryList" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/SalaryList.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="Leave" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/Leave.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="LeaveList" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/LeaveList.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="TimeSheet" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/TimeSheet.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="TimeSheetList" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/TimeSheetList.jsp"></put-attribute>
+	</definition>
+	<definition name="Attendance" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/Attendance.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="AttendanceList" extends="UserBaseLayout" >
+		<put-attribute name="body"  value="/pages/AttendanceList.jsp"></put-attribute>
+	</definition>
+
+</tiles-definitions>

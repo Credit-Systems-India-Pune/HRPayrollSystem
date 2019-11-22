@@ -1,0 +1,44 @@
+ @CHARSET "ISO-8859-1";
+
+
+
+
+ul li {display: inline-block;}
+ul li:hover {background: #A9A9A9;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #A9A9A9; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #baabc6;}
+
+
+/* login view */ 
+.modal-content{
+			background-color: darkcyan;
+		}
+		.btn-link{
+			color:white;
+		}
+		.modal-heading h2{
+			color:#ffffff;
+		}
+
+input>type{
+	color: black;
+}
+
+
+
+
+
+
+
+
+ 
